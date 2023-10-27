@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Space Mono', monospace;
+}
+
+body{
+    font-weight: 700;
+    background: #C5E4E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    padding-top: 5rem;
+    padding-bottom: 4.8rem;
+}
+main{
+    border-radius: 25px 25px 0px 0px;
+    background: #FFF;
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20);
+    padding: 3.2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap :3.2rem;
+}
+
+.first-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.bill-section,
+.people-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+#bill-error,
+#people-number-error{
+   color: #E17457;
+   text-align: right;
+   display: none;
+}
+h2{
+    color: #5E7A7D;
+    font-size: 1.6rem;
+}
+
+ input{
+    width: 31.1rem;
+    height: 4.8rem;
+    border: none;
+    border-radius: 5px;
+    background: #F3F9FA;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position-x: 1.926rem;
+    color: #00474B;
+    text-align: right;
+    font-size: 2.4rem;
+    padding-right: 1.748rem;
+    cursor: pointer;
+    outline: none;
+ }
+
+#bill-input{
+    background-image: url(./images/icon-dollar.svg);
+}
+
+.tip-container h2{
+   padding-bottom: 1.6rem;
+}
+
+.percent-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.6rem; 
+}
+
+.percent{
+    width: 14.6631rem;
+    height: 4.8rem;
+    border-radius: 5px;
+    background: #00474B;
+    color: #FFF;
+    text-align: center;
+    font-size: 2.4rem;
+    border: none;
+    cursor: pointer;
+}
+
+.percent:hover{
+    background-color: #26C2AE;
+    color: #00474B;
+}
+
+#custom-input{
+    width: 14.7814rem;
+    height: 4.8rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+    
+#people-input{
+    background-image: url(./images/icon-person.svg);
+}    
+
+.sum-box{
+    background-color: #00474B;
+    border-radius: 1.5rem;
+    width: 32.7rem;
+    height: 25.7rem;
+    padding: 3.9rem 2.2rem 3.3rem 2.4rem;
+}
+
+.amount ,
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.amount{
+    padding-bottom: 2rem;
+}
+
+.amount h2,
+.total h2{
+    color: #FFF;
+}
+
+p{
+    color: #7F9D9F;
+    font-size: 1.3rem;
+}
+
+#tip-result,
+#total-result {
+    color: #26C2AE;
+    text-align: right; 
+    font-size: 3.2rem; 
+    letter-spacing: -0.667px;
+}
+
+#reset{
+    width: 28.1rem;
+    height: 4.8rem;
+    margin-top: 3.2rem;
+    border-radius: 5px;
+    background: #26C2AE;
+    border: none;
+    color: #00474B;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#reset:hover{
+    background: #9FE8DF;
+}
+
+@media (min-width: 1440px) {
+
+    .logo{
+        padding-top: 16.3rem;
+        padding-bottom: 8.786rem;
+    }
+
+    main{
+        width: 920px;
+        height: 481px;
+        flex-direction: row;
+        gap: 4.8rem;
+        padding-left:4.8rem;
+    }
+    
+    .first-container{
+        gap:4rem;
+    }
+  
+    input{
+        width: 379px;
+    }
+
+    .percent-box{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.4rem;
+    }
+
+    .percent,
+    #custom-input{
+        width: 117px;
+    }
+
+    .sum-box{
+        width: 413px;
+        height: 417px;
+        padding: 4rem;
+    }
+
+#tip-result,
+#total-result {
+    font-size: 4.8rem;
+    letter-spacing: -1px;
+    }   
+
+.amount {
+    padding-bottom: 4rem;
+    }
+
+#reset{
+    margin-top: 12.2rem;
+    width: 333px;
+    }   
+}

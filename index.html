@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/style.css">
+ 
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/images/favicon-32x32.png">
+    <script src="app.js" defer></script>
+    <title>tip calculator app main</title>
+</head>
+<body>
+
+    <img class="logo" src="asset/images/logo.svg" alt="logo">
+  
+    <main>
+        <section class="first-container">
+        <section class="bill-container">     
+        <div class="bill-section">
+            <h2>Bill</h2>
+            <p id="bill-error"> Can’t be zero</p>
+        </div>   
+            <input type="number" name="number" placeholder="0" id="bill-input" >
+            
+        </section>
+
+        <section class="tip-container">
+            <h2>Select Tip %</h2>
+            <div class="percent-box">
+                <button class="percent"> 5% </button>
+                <button class="percent"> 10% </button>
+                <button class="percent"> 15% </button>
+                <button class="percent"> 25% </button>
+                <button  class="percent"> 50%  </button>
+                <input type="number" name="number" placeholder="Custom" id="custom-input">
+            </div>
+        </section>
+
+        <section class="people-container">
+            <div class="people-section">
+                <h2>Number of People</h2>
+                <p id="people-number-error"> Can’t be zero</p>
+            </div>
+            <input type="number" name="number"  placeholder="0" id="people-input">
+            
+        </section>
+    </section>
+
+        <section class="second-container">
+        <section class="sum-box">
+            <div class="amount">
+                <span>
+                    <h2>Tip Amount</h2>
+                    <p>/ person</p>
+                </span>  
+                <p id="tip-result">$0.00</p>
+                   
+            </div>
+
+            <div class="total">
+                <span>
+                    <h2>Total</h2>
+                    <p>/ person</p>
+                </span> 
+                <p id="total-result">$0.00</p>
+                    
+            </div>
+
+            <button id="reset">RESET</button>
+        </section>
+    </section>
+    </main>
+</body>
+</html>
